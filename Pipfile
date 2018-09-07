@@ -9,6 +9,7 @@ click = "*"
 [dev-packages]
 pyformat = "*"
 isort = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.6"

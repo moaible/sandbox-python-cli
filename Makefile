@@ -3,6 +3,8 @@ setup:
 	pipenv install -d
 	rm -rf requirements.txt
 	pipenv lock -r >> requirements.txt
+typecheck: setup
+	mypy --ignore-missing-imports --follow-imports=skip .
 format: setup
 	pyformat -i -r .
 	isort -rc .
