@@ -10,6 +10,7 @@ click = "*"
 pyformat = "*"
 isort = "*"
 mypy = "*"
+nose = "*"
 
 [requires]
 python_version = "3.6"

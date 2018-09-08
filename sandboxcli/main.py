@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-import click
-
 from commands import command
+
+import click
 
 
 @click.command(help='Simple click CLI')
@@ -9,7 +9,7 @@ from commands import command
 @click.option('-l', '--last-name', 'last_name', type=str, help='your last name', default='moaible', required=False)
 def main(name, last_name):
     print('Your name is %s' % name)
-    ret = command.execute(["ls"])
+    ret = command.execute(['ls'])
     print(ret.value)
 
 
