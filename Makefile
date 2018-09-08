@@ -8,6 +8,8 @@ typecheck: setup
 format: setup
 	pyformat -i -r .
 	isort -rc .
+test: setup typecheck
+	nosetests
 build: setup
 	python setup.py sdist
 install: setup
